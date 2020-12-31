@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETPET</title>
+    <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Material+Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style/main.css">
+</head>
+<body>
+    
+    <!-- nav主要選單 -->
+    <nav class="fixed-top z-index-fixed w-100 bg-white">
+        <div class="container">
+            <div class="row no-gutters w-100 justify-content-md-between  align-items-center">
+                <h1 class="col-6 col-md-0 offset-3 offset-md-0 text-center text-md-left">
+                    <a class="logo-style" href="./index.html">
+                        PETPET
+                    </a>
+                </h1>
+                <ul class="d-none d-md-flex">
+                    <li class="mr-10">
+                        <a class="hover-underline" href="#">預約服務</a>
+                    </li>
+                    <li class="mr-10">
+                        <a class="hover-underline" href="#">成為寵物保姆</a>
+                    </li>
+                    <li>
+                        <a class="hover-underline" href="./login.html">登入</a>
+                    </li>
+                </ul>
+                <div class="col-3 d-flex d-md-none justify-content-end">
+                    <button id="navbar-btn" class="navbar-toggler">
+                        <div class="navbar-toggler-icon" href="#">
+                            <p class="hamber-icon mb-1"></p>
+                            <p class="hamber-icon mb-1"></p>
+                            <p class="hamber-icon"></p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul id="nav-mobile" class="nav-sm">
+            <li class="text-center bg-white">
+                <a class="d-block h5 border-bottom py-4" href="#">預約服務</a>
+            </li>
+            <li class="text-center bg-white">
+                <a class="d-block h5 border-bottom py-4" href="#">成為寵物保姆</a>
+            </li>
+            <li class="text-center bg-white">
+                <a class="d-block h5 border-bottom py-4" href="#">登入</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- login -->
+    <header class="mainService pt-15 pt-md-44 pt-lg-0 mt-15 mb-30 mb-md-45 mb-lg-0">
+        <div class="container h-100">
+            <div class="row h-100 position-relative align-items-center">
+                <div class="col-md-8 offset-md-2 col-lg-7 offset-lg-5">
+                    <h2 class="font-weight-bold mb-6 mb-md-15">登入</h2>
+                    <!-- 表單 -->
+                    <form class="mb-7" action="#">
+                        <div class="mb-4">
+                            <label class="d-block text-black-900 mb-2" for="user-email">電子信箱</label>
+                            <input class="input-style" type="email" id="user-email" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="d-block text-black-900 mb-2" for="user-password">密碼</label>
+                            <input class="input-style mb-1" type="password" id="user-password" name="password" placeholder="請輸入密碼">
+                            <a class="text-black-600 font-size-sm hover-underline" href="#">忘記密碼</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input class="chcekbox-style" type="checkbox" id="rememberNumber" name="rememberNumber">
+                            <label class="text-black-900" for="rememberNumber">記住我的帳號</label>
+                        </div>
+                    </form>
+                    <ul class="row mb-10">
+                        <li class="col-12 col-lg-6 mb-3">
+                            <a class="btn hover-success d-flex align-items-center justify-content-center" href="#">
+                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/petpet-week8/facebook.svg" alt="FB-logo">
+                                <p class="text-black-600">Facebook</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-lg-6">
+                            <a class="btn hover-success d-flex align-items-center justify-content-center" href="#">
+                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/petpet-week8/google.svg" alt="">
+                                <p class="text-black-600">Google</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <a class="btn btn-success h5 mb-2" href="./member.html">登入</a>
+                            <a class="text-success hover-underline" href="#">還沒註冊嗎？</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- jQuery -->
+    <script src="./js/jquery3.5.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scss/vendors/swiper.js"></script>
+    <!-- 自己的js -->
+    <script src="./js/all.js"></script>
+</body>
+</html>

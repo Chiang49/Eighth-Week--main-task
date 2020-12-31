@@ -1,0 +1,28 @@
+
+.gallery-top{
+    height: 282px;
+    border-radius: 4px;
+    @include pad{
+        height: 221px;
+    }
+    @include desktop{
+        height: 440px;
+    }
+}
+
+.gallery-thumbs{
+    height: 81px;
+    border-radius: 4px;
+    @include pad{
+        height: 63px;
+    }
+    @include desktop{
+        height: 96px;
+    }
+}
+
+.swiper-slide{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

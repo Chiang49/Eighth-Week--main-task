@@ -1,0 +1,117 @@
+
+//文字大小
+
+.font-size-sm{
+    font-size: $font-size-sm;
+}
+.font-size-lg{
+    font-size: $font-size-lg;
+}
+
+@include pad{
+    .h1-md{
+        font-size: $font-size-base * 2.5;//40
+    }
+    .h2-md{
+        font-size: $font-size-base * 2;//32
+    }
+    .h3-md{
+        font-size: $font-size-base * 1.75;//28
+    }
+    .h4-md{
+        font-size: $font-size-base * 1.5;//24
+    }
+    .h5-md{
+        font-size: $font-size-base * 1.25;//20
+    }
+    .h6-md{
+        font-size: $font-size-base;//16
+    }
+}
+
+@include desktop{
+    .h1-lg{
+        font-size: $font-size-base * 2.5;//40
+    }
+    .h2-lg{
+        font-size: $font-size-base * 2;//32
+    }
+    .h3-lg{
+        font-size: $font-size-base * 1.75;//28
+    }
+    .h4-lg{
+        font-size: $font-size-base * 1.5;//24
+    }
+    .h5-lg{
+        font-size: $font-size-base * 1.25;//20
+    }
+    .h6-lg{
+        font-size: $font-size-base;//16
+    }
+}
+// ---------------------------------------------------
+
+//文字weigth
+.font-weight-500{
+    font-weight: $font-weight-medium;
+}
+// ---------------------------------------------------
+
+//文字顏色
+.text-black-900{//標單label用
+    color:$gray-900;
+}
+
+.text-black-600{//表單字用
+    color:$gray-600;
+}
+
+.text-black{
+    color: #000;
+}
+// ---------------------------------------------------
+
+//全網站設定
+
+//全網站header-titel
+.header-title{
+    font-size: $h3-font-size;
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacer * .25;
+    @include pad{
+        font-size: $h2-font-size;
+        margin-bottom: $spacer * .5;
+    }
+    @include desktop{
+        font-size: $h1-font-size;
+        margin-bottom: $spacer;
+    }
+}
+
+
+//全網站區塊大標題
+.title{
+    font-size: $h2-font-size;//32
+    font-weight: $font-weight-bold;
+}
+// ---------------------------------------------------
+
+// nav設定
+
+//z-index
+.z-index-fixed{
+    z-index: 3;
+}
+// ---------------------------------------------------
+
+//位置設定
+.right-0{
+    right: 0px;
+}
+
+// ---------------------------------------------------
+
+//高度=全螢幕
+.h-100vh{
+    height: 100vh;
+}

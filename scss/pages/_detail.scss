@@ -1,0 +1,10 @@
+
+.blockFixed{
+    position: static;
+    @include desktop{
+        position: fixed;
+        z-index: 2;
+    }
+}
+
+//使用z-index一定要先使用position去做開啟的動作(除了值是static以外)

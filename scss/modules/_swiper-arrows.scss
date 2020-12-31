@@ -1,0 +1,20 @@
+
+//swiper-arrows
+.swiper-button-next{
+    width: 44px;
+    height: 44px;
+    background: $secondary;
+    border-radius: 50%;
+    right: 0%;
+    &::after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 14.6px;
+        border-color: transparent transparent transparent #ffffff;
+        position: absolute;
+        top: 28%;
+        right: 28%;
+    }
+}

@@ -1,0 +1,75 @@
+
+//index共同使用區
+    .narrate{//標題敘述
+        font-size: $h5-font-size;
+        font-weight: 500;
+    }
+
+//header部分
+.mainService{
+    //PC版圖片背景
+    @include desktop{
+        height: 736px;
+        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/index-1.png?raw=true) no-repeat left;
+    }
+
+    //表單寬度變化
+    .select-sm{
+        width: 100%;
+        @include desktop{
+            width: 18.897%;
+        }
+    }
+    .slect-lg{
+        width: 100%;
+        @include desktop{
+            width: 33.07%;
+        }
+    }
+    .input-group-prepend{
+        width: 100%;
+        @include desktop{
+            width: 14.173%;
+        }
+    }
+    .input-group-text{
+        width: 100%;
+        display: block;
+        color: #fff;
+        text-align: center;
+    }//表單寬度變化結束
+
+    // 往下icon
+    .dropCircle{
+        position: absolute;
+        @include pad{
+            right: 0px;
+            bottom: 0px;
+        }
+        @include desktop{
+            bottom: 21px;
+        }
+    }// 往下icon結束
+}
+
+
+// section3-使用客戶
+.serviceQuantity{
+    background: url(/img/index-9.jpeg) no-repeat center/cover;
+    height: 812px;
+    color: #fff;
+    padding-top: 60px;
+    @include pad{
+        height: 584px;
+        padding-top: 80px;
+    }
+
+    .service-frame{
+        height: 120px;
+        border-left: 2px solid #fff;
+        padding-left: $spacer;
+        @include pad{
+            height: 212px;
+        }
+    }
+}

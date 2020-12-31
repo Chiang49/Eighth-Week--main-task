@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETPET</title>
+    <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Material+Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style/main.css">
+</head>
+<body>
+    
+    <!-- nav主要選單 -->
+    <nav class="fixed-top z-index-fixed w-100 bg-white">
+        <div class="container">
+            <div class="row no-gutters w-100 justify-content-md-between  align-items-center">
+                <h1 class="col-6 col-md-0 offset-3 offset-md-0 text-center text-md-left">
+                    <a class="logo-style" href="./index.html">
+                        PETPET
+                    </a>
+                </h1>
+                <ul class="d-none d-md-flex">
+                    <li class="mr-10">
+                        <a class="hover-underline" href="#">預約服務</a>
+                    </li>
+                    <li class="mr-10">
+                        <a class="hover-underline" href="#">成為寵物保姆</a>
+                    </li>
+                    <li>
+                        <a class="hover-underline" href="./login.html">登入</a>
+                    </li>
+                </ul>
+                <div class="col-3 d-flex d-md-none justify-content-end">
+                    <button id="navbar-btn" class="navbar-toggler">
+                        <div class="navbar-toggler-icon" href="#">
+                            <p class="hamber-icon mb-1"></p>
+                            <p class="hamber-icon mb-1"></p>
+                            <p class="hamber-icon"></p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul id="nav-mobile" class="nav-sm">
+            <li class="text-center bg-white">
+                <a class="d-block h5 border-bottom py-4" href="#">預約服務</a>
+            </li>
+            <li class="text-center bg-white">
+                <a class="d-block h5 border-bottom py-4" href="#">成為寵物保姆</a>
+            </li>
+            <li class="text-center bg-white">
+                <a class="d-block h5 border-bottom py-4" href="./login.html">登入</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header class="pt-0 pt-md-15 pt-lg-16 mt-14 mb-3 mb-md-15 mb-lg-14">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-5 col-lg-4 text-center text-md-left">
+                    <h2 class="header-title">寵物寄宿</h2>
+                    <p class="h5 h4-md font-weight-bold">給您的毛孩最舒適的環境</p>
+                </div>
+                <div class="col-md-7 col-lg-8 setPadding">
+                    <div class="header-frame">
+                        <img class="header-img object-homestay-1" src="./img/homestay-1.png" alt="homestay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 寄宿select-form -->
+    <div class="input-select py-4 mb-15 mb-lg-20">
+        <div class="container">
+            <form action="#">
+                <select class="select-set mr-2 mb-2 mb-md-0" name="pet" id="pet">
+                    <option value="貓">貓</option>
+                    <option value="狗">狗</option>
+                </select>
+                <select class="select-set mr-2 mb-2 mb-md-0" name="city" id="city">
+                    <option value="高雄市">高雄市</option>
+                    <option value="台北市">台北市</option>
+                    <option value="台南市">台南市</option>
+                </select>
+                <input class="select-set" type="text" name="daterange" value="12/01/2020 - 12/15/2020" />
+            </form>
+        </div>
+    </div>
+
+    <!-- section1-熱門住宿 -->
+    <section class="mb-5">
+        <div class="container">
+            <h3 class="title">本月熱門寄宿</h3>
+            
+            <!-- swiper for desktop & pad -->
+            <div class="swiper-container row d-none d-md-block mb-md-15 mb-lg-20">
+                <ul class="swiper-wrapper py-4">
+                    <li class="swiper-slide col-md-4">
+                        <div class="babySis-card hover-translateY">
+                            <div class="babySis-card-header">
+                                <div class="babySis-card-bgframe">
+                                    <img src="./img/index-2.jpeg" alt="" class="babySis-card-bgImg object-index2">
+                                </div>
+                                <img src="./img/person-1.png" alt="" class="babySis-card-person">
+                            </div>
+                            <div class="babySis-card-body">
+                                <h4 class="babySis-card-name">Jamie</h4>
+                                <p class="babySis-card-subtitle">寄宿、美容、寵物行為訓練</p>
+                                <a href="#" class="babySis-card-btn">預約</a>
+                                <ul class="babySis-card-content">
+                                    <li class="babySis-card-items mr-15 mr-md-8">
+                                        <p>獲得評價</p>
+                                        <p class="quantity">198<span class="unit">則</span></p>
+                                    </li>
+                                    <li class="babySis-card-items">
+                                        <p>已完成訂單</p>
+                                        <p class="quantity">580<span class="unit">件</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide col-md-4">
+                        <div class="babySis-card hover-translateY">
+                            <div class="babySis-card-header">
+                                <div class="babySis-card-bgframe">
+                                    <img src="./img/index-3.jpeg" alt="background photo" class="babySis-card-bgImg object-index3">
+                                </div>
+                                <img src="./img/person-2.png" alt="" class="babySis-card-person">
+                            </div>
+                            <div class="babySis-card-body">
+                                <h4 class="babySis-card-name">Eric</h4>
+                                <p class="babySis-card-subtitle">寄宿、美容</p>
+                                <a href="#" class="babySis-card-btn">預約</a>
+                                <ul class="babySis-card-content">
+                                    <li class="babySis-card-items  mr-15 mr-md-8">
+                                        <p>獲得評價</p>
+                                        <p class="quantity">76<span class="unit">則</span></p>
+                                    </li>
+                                    <li class="babySis-card-items">
+                                        <p>已完成訂單</p>
+                                        <p class="quantity">208<span class="unit">件</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide col-md-4">
+                        <div class="babySis-card hover-translateY">
+                            <div class="babySis-card-header">
+                                <div class="babySis-card-bgframe">
+                                    <img src="./img/index-4.jpeg" alt="" class="babySis-card-bgImg object-index4">
+                                </div>
+                                <img src="./img/person-3.png" alt="" class="babySis-card-person">
+                            </div>
+                            <div class="babySis-card-body">
+                                <h4 class="babySis-card-name">Jamie</h4>
+                                <p class="babySis-card-subtitle">寄宿、美容、寵物行為訓練</p>
+                                <a href="#" class="babySis-card-btn">預約</a>
+                                <ul class="babySis-card-content">
+                                    <li class="babySis-card-items  mr-15 mr-md-8">
+                                        <p>獲得評價</p>
+                                        <p class="quantity">52<span class="unit">則</span></p>
+                                    </li>
+                                    <li class="babySis-card-items">
+                                        <p>已完成訂單</p>
+                                        <p class="quantity">196<span class="unit">件</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+            </div><!-- swiper-End -->
+
+            <!-- mobile only -->
+            <ul class="row d-md-none mb-10">
+                <li class="col-12 mb-3">    
+                    <div class="babySis-card">
+                        <div class="babySis-card-header">
+                            <div class="babySis-card-bgframe">
+                                <img src="./img/index-2.jpeg" alt="" class="babySis-card-bgImg object-index2">
+                            </div>
+                            <img src="./img/person-1.png" alt="" class="babySis-card-person">
+                        </div>
+                        <div class="babySis-card-body">
+                            <h4 class="babySis-card-name">Jamie</h4>
+                            <p class="babySis-card-subtitle">寄宿、美容、寵物行為訓練</p>
+                            <a href="#" class="babySis-card-btn">預約</a>
+                            <ul class="babySis-card-content">
+                                <li class="babySis-card-items mr-15 mr-md-8">
+                                    <p>獲得評價</p>
+                                    <p class="quantity">198<span class="unit">則</span></p>
+                                </li>
+                                <li class="babySis-card-items">
+                                    <p>已完成訂單</p>
+                                    <p class="quantity">580<span class="unit">件</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 mb-3">
+                    <div class="babySis-card">
+                        <div class="babySis-card-header">
+                            <div class="babySis-card-bgframe">
+                                <img src="./img/index-3.jpeg" alt="background photo" class="babySis-card-bgImg object-index3">
+                            </div>
+                            <img src="./img/person-2.png" alt="" class="babySis-card-person">
+                        </div>
+                        <div class="babySis-card-body">
+                            <h4 class="babySis-card-name">Eric</h4>
+                            <p class="babySis-card-subtitle">寄宿、美容</p>
+                            <a href="#" class="babySis-card-btn">預約</a>
+                            <ul class="babySis-card-content">
+                                <li class="babySis-card-items  mr-15 mr-md-8">
+                                    <p>獲得評價</p>
+                                    <p class="quantity">76<span class="unit">則</span></p>
+                                </li>
+                                <li class="babySis-card-items">
+                                    <p>已完成訂單</p>
+                                    <p class="quantity">208<span class="unit">件</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="babySis-card">
+                        <div class="babySis-card-header">
+                            <div class="babySis-card-bgframe">
+                                <img src="./img/index-4.jpeg" alt="" class="babySis-card-bgImg object-index4">
+                            </div>
+                            <img src="./img/person-3.png" alt="" class="babySis-card-person">
+                        </div>
+                        <div class="babySis-card-body">
+                            <h4 class="babySis-card-name">Jamie</h4>
+                            <p class="babySis-card-subtitle">寄宿、美容、寵物行為訓練</p>
+                            <a href="#" class="babySis-card-btn">預約</a>
+                            <ul class="babySis-card-content">
+                                <li class="babySis-card-items  mr-15 mr-md-8">
+                                    <p>獲得評價</p>
+                                    <p class="quantity">52<span class="unit">則</span></p>
+                                </li>
+                                <li class="babySis-card-items">
+                                    <p>已完成訂單</p>
+                                    <p class="quantity">196<span class="unit">件</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 住宿店家 -->
+            <ul class="row">
+                <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-5 mb-8">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-2.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">寵屋屋</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-5 mb-8">
+                    <a class="petShop-card hover-shadow335b" href="./detail.html">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-3.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">毛孩好家</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-5 mb-8">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-4.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">妖貓X僕SS</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、美容洗澡</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-5 mb-8">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-5.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">貓是主我是僕</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-5 mb-8">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-6.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">汪汪隊</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、到府保姆、寵物行為訓練</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-5">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-7.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">卯咪</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、寵物行為訓練</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/index-2.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">貓狗大戰</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-8.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">萌寵底家</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、到府保姆</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3 d-none d-md-block d-lg-none">
+                    <a class="petShop-card hover-shadow335b" href="#">
+                        <div class="petShop-header">
+                            <img class="petShop-img" src="./img/homestay-2.jpeg" alt="">
+                        </div>
+                        <div class="petShop-body">
+                            <h4 class="petShop-name">寵屋屋</h4>
+                            <p class="petShop-score">
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                                <span class="material-icons">
+                                    grade
+                                </span>
+                            </p>
+                            <p class="petShop-service">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="petShop-footer">
+                            <button class="petShop-btn text-secondary">聯繫</button>
+                            <button class="petShop-btn text-success">預約</button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- pagination -->
+    <div class="container d-flex justify-content-end mb-15 mb-lg-20">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- jumbotron -->
+    <section class="jumbotron bg-primary-100 py-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-7">
+                    <h2 class="h4 h1-md font-weight-bold mb-3 mb-md-2">有任何我們能幫助您的嗎？</h2>
+                    <p class="h6 h5-md mb-4">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control border border-400 px-3 py-4" placeholder="example@gmail.com" aria-label="example@gmail.com" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <a class="input-group-text border border-400 bg-success py-4" id="basic-addon2" href="#">送出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-2 pb-6 pt-md-15 pb-md-7">
+        <div class="container">
+            <ul class="row align-items-center mb-0 mb-md-6">
+                <li class="col-md-3">
+                    <a class="logo-style d-block" href="./index.html">
+                        PETPET
+                    </a>
+                </li>
+                <li class="col-md-3 d-none d-md-block">
+                    <h4 class="h5 font-weight-bold">寵物服務</h4>
+                </li>
+                <li class="col-md-3 d-none d-md-block">
+                    <h4 class="h5 font-weight-bold">加入我們</h4>
+                </li>
+                <li class="col-md-3 d-none d-md-block">
+                    <h4 class="h5 font-weight-bold">聯繫我們</h4>
+                </li>
+            </ul>
+            <ul class="row d-none d-md-flex align-items-start mb-0 mb-md-27">
+                <li class="col-md-3">
+                    <ul>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">關於我們</a>
+                        </li>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">幫助中心</a>
+                        </li>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">使用條款</a>
+                        </li>
+                        <li>
+                            <a class="hover-underline" href="#">隱私政策</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-md-3">
+                    <ul>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">寵物寄宿</a>
+                        </li>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">寵物到府保姆</a>
+                        </li>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">寵物美容洗澡</a>
+                        </li>
+                        <li>
+                            <a class="hover-underline" href="#">寵物行為訓練</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-md-3">
+                    <ul>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">成為寵物保姆</a>
+                        </li>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">加入寵物計程車</a>
+                        </li>
+                        <li class="mb-6">
+                            <a class="hover-underline" href="#">專屬 APP 下載</a>
+                        </li>
+                        <li>
+                            <a class="hover-underline" href="#">相關合約條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-md-3">
+                    <ul>
+                        <li>
+                            <a class="hover-underline" href="#">petpet@petmail.com</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-none d-md-flex align-items-center">
+                    <span class="material-icons">
+                        phone
+                    </span>
+                    <p class="h5">07-123-4567</p>
+                </div>
+                <p>Copyright © 2020 PetPet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="./js/jquery3.5.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scss/vendors/swiper.js"></script>
+    <!-- 日期選單 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="./scss/vendors/daterange.js"></script>
+    <!-- 自己的js -->
+    <script src="./js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+
+#modalToggle{
+    display: none;
+}
+
+//整個modal區塊設定
+.modal{
+    background: rgba($color: #000000, $alpha: 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//modal對話框設定(背景白色區塊)
+.modal-dialog{
+    width: 348px;
+    height: 89.333%;
+    background: #ffff;
+    border-radius: 4px;
+    padding: 16px 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1030;
+    overflow-y: auto;
+    @include pad{
+        width: 690px;
+        height: 839px;
+        padding: 60px 60px 48px;
+    }
+    @include desktop{
+        width: 920px;
+        height: 580px;
+        padding: 60px 30px 48px;
+    }
+}
+
+//modal內容
+.modal-content{
+    height: 100%;
+    display: flex;
+    padding: 16px 24px 0;
+    @include pad{
+        padding: 0 0px;
+    }
+}
+
+//modal主要內容區塊
+.modal-mainContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include pad{
+        display: block;
+    }
+    @include desktop{
+        width: 548px;
+    }
+}
+
+//按鈕
+.modalBack{
+    display: none;
+}
+
+//-----------------主要內容區塊----------------------------
+//modal-title 與 pad 以下店家資訊
+.modal-title{
+    font-weight: bold;
+    margin-bottom: 12px;
+    @include pad{
+        margin-bottom: 24px;
+    }
+    @include desktop{
+        margin-bottom: 32px;
+    }
+}
+.petShop-frame{
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    @include pad{
+        width: 150px;
+        height: 150px;
+    }
+}
+.mobile-petShopName{
+    width: 188px;
+    @include pad{
+        width: auto;
+    }
+}
+
+//使用者輸入內容區塊---------------------------------
+
+//---服務選項---
+.reservation{
+    display: block;
+    .reservation-item{
+        width: 72px;
+        height: 72px;
+        font-size: 16px;
+        color: #888888;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000029;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include pad{
+            width: 128px;
+            height: 128px;
+            font-size: 20px;
+        }
+        &:hover{
+            color: $secondary;
+            border: 3px solid #D5411A;
+            .material-icons{
+                color: #F0AD25;
+            }
+        }
+        .material-icons{
+            font-size: 21px;
+            @include pad{
+                font-size: 43px;
+            }
+        }
+    }
+    //服務區塊選定
+    .reservation-action{
+        color: $secondary;
+        border: 3px solid #D5411A;
+        .material-icons{
+            color: #F0AD25;
+        }
+    }
+}
+//---預約資料---
+.information{
+    display: none;
+}
+.information-input{
+    width: 100%;
+    @include pad{
+        width: 330px;
+    }
+}
+//---付款資訊---
+.payment{
+    display: none;
+}
+
+//input-select選單區
+.inputPadding{
+    padding: 8px 16px;
+}
+
+//使用者輸入內容區塊結束----------------------------
+
+//預約表填寫進度表
+.modal-schedule{
+    border-top: 2px solid #DA3A1A;
+    text-align: center;
+    padding-top: 8px;
+    display: flex;
+    .modal-scheduleItem{
+        width: calc(100% / 3);
+        color: #000;
+        font-weight: $font-weight-light;
+        position: relative;
+        &::before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #DA3A1A;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(30%, -300%);
+        }
+    }
+    .schedule-action{
+        font-weight: $font-weight-bold;
+    }
+}
+
+//-----------------desktop版右方商家資料區塊----------------------------
+
+.modal-contentDesk{
+    width: 284px;
+    display: none;
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+}
+
+.petShopDesk-frame{
+    height: 0;
+    border-radius: 4px;
+    padding-bottom: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+
+//預約成功
+.modalEnd{
+    display: none;
+}
+.modalEnd-content{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .material-icons{
+        font-size: 52px;
+        color: $primary-100;
+    }
+    .modalEnd-btn{
+        width: 100%;
+        @include pad{
+            width: 350px;
+        }
+    }
+
+}

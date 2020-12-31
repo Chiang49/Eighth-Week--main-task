@@ -1,0 +1,93 @@
+
+.babySis-card{
+    text-align: center;
+    border: 5px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px #000;
+
+    &-header{
+        position: relative;
+    }
+    &-bgframe{
+        height: 120px;
+        overflow: hidden;
+    }
+    &-bgImg{
+        object-fit: cover;
+    }
+    &-person{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-body{
+        padding: 54px 0 28px;
+    }
+    &-name{
+        font-size: $h5-font-size;
+        font-weight: $font-weight-medium;
+        margin-bottom: $spacer * .25;//4px
+    }
+    &-subtitle{
+        margin-bottom: $spacer * .75;//12px
+    }
+    &-btn{
+        display: block;
+        width: 160px;
+        color: #fff;
+        background: $success;
+        border-radius: 4px;
+        padding: 12px 0;
+        margin: 0 auto $spacer * 1.5 auto;//bottom 24px
+        &:hover{
+            background: $secondary;
+            transition: 0.6s;
+        }
+    }
+    &-content{
+        display: flex;
+        justify-content: center;
+    }
+    &-items{
+        margin-bottom: $spacer * 0.75;//12
+        .quantity{
+            font-size: $h3-font-size;
+            font-weight: $font-weight-bold;
+        }
+        .unit{
+            font-size: $font-size-sm;//14
+            font-weight: $font-weight-normal;
+        }
+    }
+}
+
+//調整各個圖片用
+.object-index2{
+    object-position: 0px -40px;
+    @include pad{
+        object-position: 0px 0px;
+    }
+    @include desktop{
+        object-position: 0px -44px;
+    }
+
+}
+.object-index3{
+    object-position: 0px -90px;
+    @include pad{
+        object-position: 0px -55px;
+    }
+    @include desktop{
+        object-position: 0px -88px;
+    }
+}
+.object-index4{
+    object-position: 0px -72px;
+    @include pad{
+        object-position: 0px -13px;
+    }
+    @include desktop{
+        object-position: 0px -72px;
+    }
+}

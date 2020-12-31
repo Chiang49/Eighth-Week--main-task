@@ -1,0 +1,40 @@
+
+@import "./abstracts/mixin";
+//bootstrap
+@import "./bootstrap/functions";
+@import "./bootstrap/mixins";
+@import "./bootstrap/variables";
+@import "./bootstrap/utilities";
+@import "./base/rest"; //reset
+@import "./bootstrap/grid";
+@import "./bootstrap/type";
+@import "./bootstrap/input-group";
+@import "./bootstrap/pagination";
+//全域設定
+@import "./base/base";
+@import "./abstracts/utilities";
+
+//字型
+@import "../font-family/Baloo_Thambi_2/BalooThambi2-Regular.ttf";
+
+//元件
+@import "./modules/mainNav";
+@import "./modules/jumbotron";
+@import "./modules/babysitter-card";
+@import "./modules/reservation-card";
+@import "./modules/header-img-mobile";
+@import "./modules/input-select";
+@import "./modules/petShop-card";
+@import "./modules/btn";
+@import "./modules/swiper-gallery";
+@import "./modules/comment-card";
+@import "./modules/dropdown";
+@import "./modules/modal";
+@import "./modules/swiper-arrows";
+@import "./modules/hover";
+
+//頁面
+@import "./pages/index";
+@import "./pages/detail";
+@import "./pages/login";
+@import "./pages/member";

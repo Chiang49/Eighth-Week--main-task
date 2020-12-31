@@ -1,0 +1,35 @@
+
+//header圖片mobile版設定
+.setPadding{
+    padding-left: 0px;
+    padding-right: 0px;
+    @include pad{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.header-frame{
+    padding-bottom: 100%;
+    height: 352px;
+    position: relative;
+    overflow: hidden;
+    @include pad{
+        padding-bottom: 0%;
+        height: 315px;
+    }
+}
+.header-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}//圖片pad與mobile版變化結束
+
+
+//圖片調整位置
+.object-homestay-1{
+    object-position: -131px;
+    @include pad{
+        object-position: -100px;
+    }
+}

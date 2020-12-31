@@ -1,0 +1,27 @@
+
+.dropdown-toggle{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu{
+    display: none;
+    width: 192px;
+    border: 1px solid #00000020;
+    position: absolute;
+    right: 0px;
+    margin-top: 12px;
+}
+
+.dropdown-item{
+    padding: 8px 20px;
+    &:hover{
+        background: $gray-100;
+        transition: 0.6s;
+    }
+}
+
+.dropdown-special{
+    padding: 12px 20px;
+    color: $success;
+}

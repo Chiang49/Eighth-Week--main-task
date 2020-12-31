@@ -1,0 +1,33 @@
+
+.commentCard{
+    height: 116px;
+    border: 2px solid #DADFE3;
+    border-radius: 4px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    .commentCard-frame{
+        width: 60px;
+        height: 60px;
+        margin-right: $spacer * .75;//12
+    }
+    .commentCard-name{
+        margin-bottom: 5px;
+    }
+    .commentCard-img{
+        width: 100%;
+    }
+    .commentCard-date{
+        margin-left: $spacer * .5;//8
+        font-size: $font-size-sm;//14
+        color: #887676;
+    }
+    .commentCard-score{
+        font-size: $h5-font-size;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .commentCard-comment{
+        white-space: nowrap;
+    }
+}

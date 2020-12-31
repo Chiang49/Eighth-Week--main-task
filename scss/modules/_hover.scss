@@ -1,0 +1,45 @@
+
+.hover-underline{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.hover-translateY{
+    &:hover{
+        transform: translateY(-10px);
+        transition: 0.7s;
+    }
+}
+
+.hover-shadow033b{
+    &:hover{
+        box-shadow: 0px 3px 3px #000;
+        transition: 0.7s;
+    }
+}
+
+.hover-shadow335b{
+    &:hover{
+        box-shadow: 3px 3px 5px #000;
+        transition: 0.8s;
+    }
+}
+
+.hover-opacity{
+    &:hover{
+        opacity: 0.6;
+        transition: 0.7s;
+    }
+}
+
+.hover-success{
+    &:hover{
+        p{
+            color: #fff;
+        }
+        background: $success;
+        border-color: $success;
+        transition: 0.8s;
+    }
+}
