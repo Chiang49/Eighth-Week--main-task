@@ -1,8 +1,15 @@
 //首頁卡片輪播
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,//原來是30
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
+    //斷點設置
+    breakpoints:{
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      }
+    },
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {

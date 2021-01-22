@@ -1,4 +1,38 @@
 
+//mainNav
+
+//Logo專用字型
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+.logo-style{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 36px;
+    font-weight: 900;
+    color: $primary;
+}
+
+//選單按鈕
+.navbar-toggler{
+    border: none;
+    background: none;
+    padding: 16px 0px 16px 20px;
+    .hamber-icon{
+        display: block;
+        width: 32px;
+        height: 5px;
+        background: $primary;
+        border-radius: 4px;
+    }
+}
+
+//mobile版nav
+.nav-sm{
+    display: none;
+}
+
+//-----------------------------------------------
+
+
 //header圖片mobile版設定
 .setPadding{
     padding-left: 0px;

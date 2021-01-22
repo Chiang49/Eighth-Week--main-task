@@ -15471,6 +15471,57 @@ a {
   height: 100vh;
 }
 
+.pageActive {
+  color: #fff;
+  background: #F8B52E;
+}
+
+.hover-underline {
+  padding: 8px 0px;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.hover-translateY:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.hover-shadow033b:hover {
+  -webkit-box-shadow: 0px 3px 3px #000;
+          box-shadow: 0px 3px 3px #000;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.hover-shadow335b:hover {
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.hover-opacity:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.hover-success:hover {
+  background: #D54100;
+  border-color: #D54100;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.hover-success:hover p {
+  color: #fff;
+}
+
 .logo-style {
   font-family: 'Baloo Thambi 2', cursive;
   font-size: 36px;
@@ -15494,6 +15545,52 @@ a {
 
 .nav-sm {
   display: none;
+}
+
+.setPadding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 768px) {
+  .setPadding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.header-frame {
+  padding-bottom: 100%;
+  height: 352px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .header-frame {
+    padding-bottom: 0%;
+    height: 315px;
+  }
+}
+
+.header-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-homestay-1 {
+  -o-object-position: -131px;
+     object-position: -131px;
+}
+
+@media (min-width: 768px) {
+  .object-homestay-1 {
+    -o-object-position: -100px;
+       object-position: -100px;
+  }
 }
 
 .jumbotron {
@@ -15748,52 +15845,6 @@ a {
      object-position: -182px;
 }
 
-.setPadding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media (min-width: 768px) {
-  .setPadding {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-.header-frame {
-  padding-bottom: 100%;
-  height: 352px;
-  position: relative;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .header-frame {
-    padding-bottom: 0%;
-    height: 315px;
-  }
-}
-
-.header-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-homestay-1 {
-  -o-object-position: -131px;
-     object-position: -131px;
-}
-
-@media (min-width: 768px) {
-  .object-homestay-1 {
-    -o-object-position: -100px;
-       object-position: -100px;
-  }
-}
-
 .input-select {
   background: #F0AD25;
 }
@@ -15850,6 +15901,7 @@ a {
   border: none;
   background: none;
   padding: 12px 0;
+  cursor: pointer;
 }
 
 .petShop-card .petShop-btn:hover {
@@ -16113,6 +16165,13 @@ a {
   display: none;
 }
 
+.modalBack:hover {
+  color: #fff;
+  background: #D54100;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
 .modal-title {
   font-weight: bold;
   margin-bottom: 12px;
@@ -16355,48 +16414,6 @@ a {
   position: absolute;
   top: 28%;
   right: 28%;
-}
-
-.hover-underline:hover {
-  text-decoration: underline;
-}
-
-.hover-translateY:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.hover-shadow033b:hover {
-  -webkit-box-shadow: 0px 3px 3px #000;
-          box-shadow: 0px 3px 3px #000;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.hover-shadow335b:hover {
-  -webkit-box-shadow: 3px 3px 5px #000;
-          box-shadow: 3px 3px 5px #000;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.hover-opacity:hover {
-  opacity: 0.6;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.hover-success:hover {
-  background: #D54100;
-  border-color: #D54100;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.hover-success:hover p {
-  color: #fff;
 }
 
 .narrate {

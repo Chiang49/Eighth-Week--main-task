@@ -1,37 +1,35 @@
 
-@import "./abstracts/mixin";
 //bootstrap
-@import "./bootstrap/functions";
-@import "./bootstrap/mixins";
-@import "./bootstrap/variables";
-@import "./bootstrap/utilities";
+@import "./vendors/bootstrap/functions";
+@import "./vendors/bootstrap/mixins";
+@import "./vendors/bootstrap/variables";
+@import "./vendors/bootstrap/utilities";
 @import "./base/rest"; //reset
-@import "./bootstrap/grid";
-@import "./bootstrap/type";
-@import "./bootstrap/input-group";
-@import "./bootstrap/pagination";
+@import "./vendors/bootstrap/grid";
+@import "./vendors/bootstrap/type";
+@import "./vendors/bootstrap/input-group";
+@import "./vendors/bootstrap/pagination";
+
 //全域設定
 @import "./base/base";
+@import "./abstracts/mixin";
 @import "./abstracts/utilities";
 
-//字型
-@import "../font-family/Baloo_Thambi_2/BalooThambi2-Regular.ttf";
+//layout
+@import "./layout/layout";
 
 //元件
-@import "./modules/mainNav";
 @import "./modules/jumbotron";
-@import "./modules/babysitter-card";
-@import "./modules/reservation-card";
-@import "./modules/header-img-mobile";
+@import "./modules/card/babysitter-card";
+@import "./modules/card/reservation-card";
 @import "./modules/input-select";
-@import "./modules/petShop-card";
+@import "./modules/card/petShop-card";
 @import "./modules/btn";
 @import "./modules/swiper-gallery";
-@import "./modules/comment-card";
+@import "./modules/card/comment-card";
 @import "./modules/dropdown";
 @import "./modules/modal";
 @import "./modules/swiper-arrows";
-@import "./modules/hover";
 
 //頁面
 @import "./pages/index";

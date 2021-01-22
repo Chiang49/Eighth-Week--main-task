@@ -68,7 +68,13 @@
 //按鈕
 .modalBack{
     display: none;
+    &:hover{
+        color: #fff;
+        background: #D54100;
+        transition: 0.6s;
+    }
 }
+
 
 //-----------------主要內容區塊----------------------------
 //modal-title 與 pad 以下店家資訊

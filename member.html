@@ -79,14 +79,14 @@
     </nav>
 
     <!-- 會員資料 -->
-    <section class="h-100vh mt-15 d-flex justify-content-center align-items-center">
+    <section class="h-100vh mt-15 mt-lg-0 d-flex justify-content-center align-items-center">
         <div class="container">
             <!-- 會員title -->
             <div class="row mb-10 mb-md-8">
                 <div class="col-md-6 col-lg-5 offset-lg-1">
                     <h2 class="font-weight-bold d-flex align-items-center">
                         <p class="mr-2">會員資料</p>
-                        <a href="">
+                        <a href="#">
                             <span class="material-icons">
                                 edit
                             </span>
@@ -96,30 +96,32 @@
             </div>
             <!-- 會員個資內容 -->
             <div class="row">
+                <!-- 會員基本資料 -->
                 <div class="col-md-6 col-lg-4 offset-lg-1 mb-15 mb-md-0">
                     <div class="d-flex align-items-center mb-9">
                         <img class="member-user mr-4" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/petpet-week8/person-5.png?raw=true" alt="person-photo">
                         <p class="h5 font-weight-500">Joanne</p>
                     </div>
-                    <div class="row ">
-                        <ul class="col-3 col-md-4 col-lg-3">
-                            <li class="text-black text-nowrap mb-5">電子信箱</li>
-                            <li class="text-black text-nowrap mb-5">聯絡電話</li>
-                            <li class="text-black text-nowrap mb-5">性別</li>
-                            <li class="text-black text-nowrap">聯絡地址</li>
-                        </ul>
-                        <ul class="col-9 col-md-8 col-lg-9">
-                            <li class="mb-5">
-                                <a class="hover-underline" href="#">cycample@gmail.com</a>
-                            </li>
-                            <li class="mb-5">
-                                <a class="hover-underline" href="#">0912-345-789</a>
-                            </li>
-                            <li class="mb-5">女</li>
-                            <li>高雄市鹽埕區七賢三路123號</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li class="row mb-5">
+                            <p class="col-3 col-md-4 col-lg-3 text-black text-nowrap">電子信箱</p>
+                            <a class="col-9 col-md-8 col-lg-9" href="mailto: cycample@gmail.com">cycample@gmail.com</a>
+                        </li>
+                        <li class="row mb-5">
+                            <p class="col-3 col-md-4 col-lg-3  text-black text-nowrap">聯絡電話</p>
+                            <a class="col-9 col-md-8 col-lg-9" href="tel:+ 0912-345-789">0912-345-789</a>
+                        </li>
+                        <li class="row mb-5">
+                            <p class="col-3 col-md-4 col-lg-3  text-black text-nowrap">性別</p>
+                            <span class="col-9 col-md-8 col-lg-9">女</span>
+                        </li>
+                        <li class="row">
+                            <p class="col-3 col-md-4 col-lg-3  text-black text-nowrap">聯絡地址</p>
+                            <span class="col-9 col-md-8 col-lg-9">高雄市鹽埕區七賢三路123號</span>
+                        </li>
+                    </ul>
                 </div>
+                <!-- 寵物保母招募 -->
                 <div class="col-md-6 col-lg-6 offset-lg-1">
                     <h2 class="h4 h2-lg font-weight-bold text-nowrap mb-9 mb-lg-8">Hi, Joanne<br>喜歡我們提供的服務嗎？<br>現在你也可以成為寵物保姆囉！</h2>
                     <div class="row">
@@ -137,7 +139,7 @@
     <script src="./js/jquery3.5.1.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./scss/vendors/swiper.js"></script>
+    <script src="./js/swiper.js"></script>
     <!-- 自己的js -->
     <script src="./js/all.js"></script>
 </body>
